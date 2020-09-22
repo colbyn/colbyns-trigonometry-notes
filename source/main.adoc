@@ -4,3 +4,37 @@
 
 = Colbyn's Trigonometry Notes
 
+== Trigonometric identities
+
+
+
+== Properties of Trigonometric Functions
+
+.Domain and Range of Trigonometric Functions
+|===
+|Function|Domain|Range
+
+|latexmath:[\sin]|latexmath:[(-\infty,\infty)]|latexmath:[[-1, 1]]
+|latexmath:[\cos]|latexmath:[(-\infty,\infty)]|latexmath:[-1, 1]
+|latexmath:[\tan]||latexmath:[(-\infty,\infty)]
+|===
+
+.Domain and Range of Reciprocal Trigonometric Functions
+|===
+|Function|Domain|Range
+
+|latexmath:[\csc] | | latexmath:[(-\infty,-1\rbrack\cup\lbrack 1, \infty)]
+|latexmath:[\sec] | | latexmath:[(-\infty,-1\rbrack\cup\lbrack 1, \infty)]
+|latexmath:[\cot]| | latexmath:[(-\infty,\infty)]
+|===
+
+.Period of Trigonometric Functions
+|===
+|Function|Period|Reciprocal Function|Period
+
+|latexmath:[\sin]|latexmath:[\tau]|latexmath:[\csc]|latexmath:[\tau]
+|latexmath:[\cos]|latexmath:[\tau]|latexmath:[\sec]|latexmath:[\tau]
+|latexmath:[\tan]|latexmath:[\frac{1}{2}\tau]|latexmath:[\cot]|latexmath:[\frac{1}{2}\tau]
+|===
+
+
