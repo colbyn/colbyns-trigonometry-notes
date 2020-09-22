@@ -4,8 +4,19 @@
 
 = Colbyn's Trigonometry Notes
 
-== Trigonometric identities
+****
+|===
+| Source Code | https://github.com/colbyn/colbyns-trigonometry-notes[GitHub.com/colbyn/colbyns-trigonometry-notes]
+| Online Edition | https://colbyn.github.io/colbyns-trigonometry-notes/[Colbyn.GitHub.io/colbyns-trigonometry-notes]
+|===
+****
 
+== Trigonometric Identities
+
+[latexmath]
+++++
+\cos^2(\theta_1) + sin^2(\theta_2) = 1
+++++
 
 
 == Properties of Trigonometric Functions
@@ -14,8 +25,8 @@
 |===
 |Function|Domain|Range
 
-|latexmath:[\sin]|latexmath:[(-\infty,\infty)]|latexmath:[[-1, 1]]
-|latexmath:[\cos]|latexmath:[(-\infty,\infty)]|latexmath:[-1, 1]
+|latexmath:[\sin]|latexmath:[(-\infty,\infty)]|latexmath:[\lbrack -1, 1 \rbrack]
+|latexmath:[\cos]|latexmath:[(-\infty,\infty)]|latexmath:[\lbrack -1, 1 \rbrack]
 |latexmath:[\tan]||latexmath:[(-\infty,\infty)]
 |===
 
