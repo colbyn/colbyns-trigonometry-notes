@@ -442,8 +442,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_trigonometric_identities">Trigonometric Identities</a></li>
+<li><a href="#_unit_conversion">Unit Conversion</a></li>
+<li><a href="#_pythagorean_identities">Pythagorean Identities</a>
+<ul class="sectlevel2">
+<li><a href="#_given">Given</a></li>
+<li><a href="#_then_therefore">Then therefore</a></li>
+<li><a href="#_likewise">Likewise</a></li>
+<li><a href="#_pythagorean_identities_reference">Pythagorean Identities Reference</a></li>
+</ul>
+</li>
 <li><a href="#_properties_of_trigonometric_functions">Properties of Trigonometric Functions</a></li>
+<li><a href="#_concepts">Concepts</a></li>
 </ul>
 </div>
 </div>
@@ -473,11 +482,138 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_trigonometric_identities">Trigonometric Identities</h2>
+<h2 id="_unit_conversion">Unit Conversion</h2>
 <div class="sectionbody">
 <div class="stemblock">
 <div class="content">
-\[\cos^2(\theta_1) + sin^2(\theta_2) = 1\]
+\[\begin{equation}
+\begin{split}
+\tau &amp;= 2\pi = 360^{\circ} \\
+\pi &amp;= \frac{1}{2}\tau = 180^{\circ}
+\end{split}
+\end{equation}\]
+</div>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+1^{\circ} = \frac{1}{360} \tau \; {\displaystyle {\text{rad}}} \\
+1 \; rad = \frac{1}{\tau} \cdot 360^{\circ}
+\end{split}
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p>So therefore:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+x^{\circ} = \frac{x}{360} \tau \; {\displaystyle {\text{rad}}} \\
+x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
+\end{split}
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Take special note of the above.</strong> It essentially gives you a simple relation for conversion.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[29^{\circ} = \frac{29}{360} \tau \; {\displaystyle {\text{rad}}}\]
+</div>
+</div>
+<div class="paragraph">
+<p>Or when expressed in terms of \(\pi\):</p>
+</div>
+\begin{equation}
+\begin{split}
+29^{\circ} &= \frac{29}{360} \tau \; {\displaystyle {\text{rad}}} \\
+    &= \frac{29}{360} (2\pi) \; {\displaystyle {\text{rad}}} \\
+    &= \frac{29}{180} \pi \; {\displaystyle {\text{rad}}}
+\end{split}
+\end{equation}
+<div class="paragraph">
+<p>The above cannot be understated. Now you don&#8217;t need to compute a degree to radian measure.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pythagorean_identities">Pythagorean Identities</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_given">Given</h3>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &amp;= 1
+\end{split}
+\end{equation}\]
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_then_therefore">Then therefore</h3>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &amp;= 1 \\
+\sin^2(\theta) &amp;= 1 - \cos^2(\theta) \\
+\cos^2(\theta) &amp;= 1 - \sin^2(\theta)
+\end{split}
+\end{equation}\]
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_likewise">Likewise</h3>
+<div class="paragraph">
+<p><strong>From here the other two "Pythagorean Identities" can be easily derived.</strong></p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\frac{\sin^2(\theta)}{\sin^2(\theta)} &amp;= 1 \\
+    &amp;= \frac{1 - \cos^2(\theta)}{\sin^2(\theta)} \\
+    &amp;= \frac{1}{\sin^2(\theta)} - \frac{\cos^2(\theta)}{\sin^2(\theta)} \\
+    &amp;= \csc^2(\theta) - \cot^2(\theta)
+\end{split}
+\end{equation}\]
+</div>
+</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\frac{\cos^2(\theta)}{\cos^2(\theta)} &amp;= 1 \\
+    &amp;= \frac{1 - \sin^2(\theta)}{\cos^2(\theta)} \\
+    &amp;= \frac{1}{\cos^2(\theta)} - \frac{\sin^2(\theta)}{\cos^2(\theta)} \\
+    &amp;= \sec^2(\theta) - \tan^2(\theta)
+\end{split}
+\end{equation}\]
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pythagorean_identities_reference">Pythagorean Identities Reference</h3>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &amp;= 1 \\
+\sec^2(\theta) - \tan^2(\theta) &amp;= 1 \\
+\csc^2(\theta) - \cot^2(\theta) &amp;= 1
+\end{split}
+\end{equation}\]
+</div>
 </div>
 </div>
 </div>
@@ -588,10 +724,235 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_concepts">Concepts</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2.1:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Complement and Supplement</strong></p>
+</li>
+<li>
+<p><strong>Co-Terminal with given angle</strong></p>
+</li>
+<li>
+<p>DMS to equivalent decimal degree value.</p>
+</li>
+<li>
+<p><strong>Degree to exact radian measure</strong>.</p>
+</li>
+<li>
+<p><strong>Convert each radian measure to exact degree measure</strong>.</p>
+</li>
+<li>
+<p><strong>Find measure of the central angle of a circle subtended by a given arc.</strong></p>
+</li>
+<li>
+<p><strong>Find the length of an arc that subtends a central angle with the given measure in a circle with the given radius.</strong></p>
+</li>
+<li>
+<p>Applications:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Angular rotation of two pulleys.</strong></p>
+</li>
+<li>
+<p><strong>Angular speed.</strong></p>
+</li>
+<li>
+<p><strong>Linear speed of a car.</strong></p>
+</li>
+<li>
+<p><strong>Angle of rotation and distance.</strong></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>2.2:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Find measure of the 6 trig functions with the given sides.</strong></p>
+</li>
+<li>
+<p><strong>Given some \(\theta\) in a right triangle,
+find other trig values given e.g. \(\sin \theta = \frac{3}{5}\), then e.g. find \(\tan \theta\).</strong></p>
+</li>
+<li>
+<p>Use calculator to find value of a given trig function to some given decimal place.</p>
+</li>
+<li>
+<p>Triangle Relationships:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Vertical height from slant height</strong>.</p>
+</li>
+<li>
+<p><strong>Distance across a marsh</strong>.</p>
+</li>
+<li>
+<p><strong>Width of a lake</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Multi Triangle Relationships:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Height of a Pyramid</strong>.</p>
+</li>
+<li>
+<p><strong>Height of a building</strong>.</p>
+</li>
+<li>
+<p><strong>Height of a tower</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>2.3:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Find value for each of the six trig functions for the angle whose terminal side passes through the given point.</strong></p>
+</li>
+<li>
+<p><strong>Evaluate the trig function of the quadrilateral angle, or state that the function is undefined.</strong></p>
+</li>
+<li>
+<p>**Given some \(\theta\) in standard position, state the quadrant in which the terminal side of \(\theta\) lies</p>
+</li>
+<li>
+<p><strong>Find the exact value of each expression.</strong></p>
+</li>
+<li>
+<p><strong>Find the measure of the reference angle \(\theta^\prime\) for the given angle \(\theta\).</strong></p>
+</li>
+<li>
+<p><strong>Use the Reference Angle Theorem  to find the exact value of each trig functions.</strong></p>
+</li>
+<li>
+<p>Use calculator to approximate the given trig function value to six significant digits.</p>
+</li>
+<li>
+<p>Fine the exact value of each expression.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>2.4:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Evaluate \(W(t)\) for each given \(t\).</p>
+</li>
+<li>
+<p><strong>Fine the exact value of each function</strong></p>
+</li>
+<li>
+<p>Use the unit circle to estimate the following values to the nearest tenth.</p>
+</li>
+<li>
+<p>Determinate whether the function is even, odd or neither.</p>
+</li>
+<li>
+<p>State the period of each function.</p>
+</li>
+<li>
+<p>Use the unit circle to verify each identity.</p>
+</li>
+<li>
+<p>Use trigonometric identities to write each expression in terms of a single trigonometric function or a constant.</p>
+</li>
+<li>
+<p>Use trigonometric identities to find the value of the function.</p>
+</li>
+<li>
+<p>Simplify the first expression to the second expression.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>2.5:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>State the amplitude and period of the function defined by each equation.</p>
+</li>
+<li>
+<p>Graph one full period of the function defined by each expression.</p>
+</li>
+<li>
+<p>Find an equation of the given graph.</p>
+</li>
+<li>
+<p>2.6:</p>
+</li>
+<li>
+<p>For which value of x is the given function undefined.</p>
+</li>
+<li>
+<p>State the period of each function.</p>
+</li>
+<li>
+<p>Sketch one full period of the graph of the given function.</p>
+</li>
+<li>
+<p>Find an equation for each line.</p>
+</li>
+<li>
+<p>Graph absolute value trig functions.</p>
+</li>
+<li>
+<p>2.6:</p>
+</li>
+<li>
+<p>Find the amplitude, phase shift and period for the graph of each function.</p>
+</li>
+<li>
+<p>Find the phase shift and period for the graph of the given function.</p>
+</li>
+<li>
+<p>Graph one fill period of the given function.</p>
+</li>
+<li>
+<p>Graph each function by using translations.</p>
+</li>
+<li>
+<p>Graph the given function by using the addition-of-ordinates method.</p>
+</li>
+<li>
+<p>Find an equation for each blue graph.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-09-21 19:10:14 -0600
+Last updated 2020-09-22 17:17:11 -0600
 </div>
 </div>
 <script type="text/x-mathjax-config">
