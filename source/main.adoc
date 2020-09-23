@@ -11,12 +11,127 @@
 |===
 ****
 
-== Trigonometric Identities
+== Unit Conversion
 
 [latexmath]
 ++++
-\cos^2(\theta_1) + sin^2(\theta_2) = 1
+\begin{equation}
+\begin{split}
+\tau &= 2\pi = 360^{\circ} \\
+\pi &= \frac{1}{2}\tau = 180^{\circ}
+\end{split}
+\end{equation}
 ++++
+
+
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+1^{\circ} = \frac{1}{360} \tau \; {\displaystyle {\text{rad}}} \\
+1 \; rad = \frac{1}{\tau} \cdot 360^{\circ}
+\end{split}
+\end{equation}
+++++
+
+So therefore:
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+x^{\circ} = \frac{x}{360} \tau \; {\displaystyle {\text{rad}}} \\
+x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
+\end{split}
+\end{equation}
+++++
+
+**Take special note of the above.** It essentially gives you a simple relation for conversion.
+
+For example:
+[latexmath]
+++++
+29^{\circ} = \frac{29}{360} \tau \; {\displaystyle {\text{rad}}}
+++++
+
+Or when expressed in terms of latexmath:[\pi]:
+++++
+\begin{equation}
+\begin{split}
+29^{\circ} &= \frac{29}{360} \tau \; {\displaystyle {\text{rad}}} \\
+    &= \frac{29}{360} (2\pi) \; {\displaystyle {\text{rad}}} \\
+    &= \frac{29}{180} \pi \; {\displaystyle {\text{rad}}}
+\end{split}
+\end{equation}
+++++
+
+The above cannot be understated. Now you don't need to compute a degree to radian measure.
+
+
+== Pythagorean Identities
+
+=== Given
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &= 1
+\end{split}
+\end{equation}
+++++
+
+=== Then therefore
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &= 1 \\
+\sin^2(\theta) &= 1 - \cos^2(\theta) \\
+\cos^2(\theta) &= 1 - \sin^2(\theta)
+\end{split}
+\end{equation}
+++++
+
+=== Likewise
+
+**From here the other two "Pythagorean Identities" can be easily derived.**
+
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\frac{\sin^2(\theta)}{\sin^2(\theta)} &= 1 \\
+    &= \frac{1 - \cos^2(\theta)}{\sin^2(\theta)} \\
+    &= \frac{1}{\sin^2(\theta)} - \frac{\cos^2(\theta)}{\sin^2(\theta)} \\
+    &= \csc^2(\theta) - \cot^2(\theta)
+\end{split}
+\end{equation}
+++++
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\frac{\cos^2(\theta)}{\cos^2(\theta)} &= 1 \\
+    &= \frac{1 - \sin^2(\theta)}{\cos^2(\theta)} \\
+    &= \frac{1}{\cos^2(\theta)} - \frac{\sin^2(\theta)}{\cos^2(\theta)} \\
+    &= \sec^2(\theta) - \tan^2(\theta)
+\end{split}
+\end{equation}
+++++
+
+=== Pythagorean Identities Reference
+
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\cos^2(\theta) + \sin^2(\theta) &= 1 \\
+\sec^2(\theta) - \tan^2(\theta) &= 1 \\
+\csc^2(\theta) - \cot^2(\theta) &= 1
+\end{split}
+\end{equation}
+++++
+
+
 
 
 == Properties of Trigonometric Functions
@@ -48,4 +163,84 @@
 |latexmath:[\tan]|latexmath:[\frac{1}{2}\tau]|latexmath:[\cot]|latexmath:[\frac{1}{2}\tau]
 |===
 
+
+## Concepts
+
+* 2.1:
+** **Complement and Supplement**
+** **Co-Terminal with given angle**
+** DMS to equivalent decimal degree value.
+** **Degree to exact radian measure**.
+** **Convert each radian measure to exact degree measure**.
+** **Find measure of the central angle of a circle subtended by a given arc.**
+** **Find the length of an arc that subtends a central angle with the given measure in a circle with the given radius.** 
+** Applications:
+*** **Angular rotation of two pulleys.**
+*** **Angular speed.**
+*** **Linear speed of a car.**
+*** **Angle of rotation and distance.**
+* 2.2:
+** **Find measure of the 6 trig functions with the given sides.**
+** **Given some latexmath:[\theta] in a right triangle, 
+    find other trig values given e.g. latexmath:[\sin \theta = \frac{3}{5}], then e.g. find latexmath:[\tan \theta].**
+** Use calculator to find value of a given trig function to some given decimal place.
+** Triangle Relationships:
+*** **Vertical height from slant height**.
+*** **Distance across a marsh**.
+*** **Width of a lake**.
+** Multi Triangle Relationships:
+*** **Height of a Pyramid**.
+*** **Height of a building**.
+*** **Height of a tower**.
+* 2.3:
+** **Find value for each of the six trig functions for the angle whose terminal side passes through the given point.**
+** **Evaluate the trig function of the quadrilateral angle, or state that the function is undefined.**
+** **Given some latexmath:[\theta] in standard position, state the quadrant in which the terminal side of latexmath:[\theta] lies
+** **Find the exact value of each expression.**
+** **Find the measure of the reference angle latexmath:[\theta^\prime] for the given angle latexmath:[\theta].**
+** **Use the Reference Angle Theorem  to find the exact value of each trig functions.**
+** Use calculator to approximate the given trig function value to six significant digits. 
+** Fine the exact value of each expression.
+* 2.4:
+** Evaluate latexmath:[W(t)] for each given latexmath:[t].
+** **Fine the exact value of each function**
+** Use the unit circle to estimate the following values to the nearest tenth. 
+** Determinate whether the function is even, odd or neither. 
+** State the period of each function.
+** Use the unit circle to verify each identity. 
+** Use trigonometric identities to write each expression in terms of a single trigonometric function or a constant.
+** Use trigonometric identities to find the value of the function.
+** Simplify the first expression to the second expression.
+* 2.5:
+** State the amplitude and period of the function defined by each equation. 
+** Graph one full period of the function defined by each expression.
+** Find an equation of the given graph.
+** 2.6:
+** For which value of x is the given function undefined.
+** State the period of each function.
+** Sketch one full period of the graph of the given function.
+** Find an equation for each line.
+** Graph absolute value trig functions.
+** 2.6:
+** Find the amplitude, phase shift and period for the graph of each function.
+** Find the phase shift and period for the graph of the given function.
+** Graph one fill period of the given function.
+** Graph each function by using translations.
+** Graph the given function by using the addition-of-ordinates method.
+** Find an equation for each blue graph.
+
+
+// When is latexmath:[\frac{1}{\cos \x} = 0]?
+
+// latexmath:[\frac{1}{\cos x}] is undefined when 
+
+
+// .When is
+// |===
+// |Function|Period|Reciprocal Function|Period
+
+// |latexmath:[\sin]|latexmath:[\tau]|latexmath:[\csc]|latexmath:[\tau]
+// |latexmath:[\cos]|latexmath:[\tau]|latexmath:[\sec]|latexmath:[\tau]
+// |latexmath:[\tan]|latexmath:[\frac{1}{2}\tau]|latexmath:[\cot]|latexmath:[\frac{1}{2}\tau]
+// |===
 
