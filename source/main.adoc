@@ -4,12 +4,44 @@
 
 = Colbyn's Trigonometry Notes
 
+.Locations
 ****
 |===
 | Source Code | https://github.com/colbyn/colbyns-trigonometry-notes[GitHub.com/colbyn/colbyns-trigonometry-notes]
 | Online Edition | https://colbyn.github.io/colbyns-trigonometry-notes/[Colbyn.GitHub.io/colbyns-trigonometry-notes]
 |===
 ****
+
+== Functional Utilities
+
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+f \triangleleft x &= f(x) \\
+x \triangleright f &= f(x)
+\end{split}
+\end{equation}
+++++
+
+Think of the arrows as denoting the order of evaluation
+E.g. pass this term to the function on the left, or pass this term to the function on the right of the arrow.
+Essentially, this is useful for reducing parentheses.
+
+.For Example
+****
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+\sin \triangleleft \frac{4}{12}\tau \;\displaystyle{\text{rad}} &= -\frac{\sqrt{3}}{3} \\
+\sin \left(\frac{4}{12}\tau \;\displaystyle{\text{rad}} \right) &= -\frac{\sqrt{3}}{3}
+\end{split}
+\end{equation}
+++++
+****
+
+
 
 == Unit Conversion
 
@@ -47,6 +79,19 @@ x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
 
 **Take special note of the above.** It essentially gives you a simple relation for conversion.
 
+.Or alternatively
+****
+[latexmath]
+++++
+\begin{equation}
+\begin{split}
+x^{\circ} = x \cdot \frac{\tau}{360} \; {\displaystyle {\text{rad}}} \\
+x \; rad = x \cdot \frac{360^{\circ}}{\tau}
+\end{split}
+\end{equation}
+++++
+****
+
 For example:
 [latexmath]
 ++++
@@ -54,6 +99,8 @@ For example:
 ++++
 
 Or when expressed in terms of latexmath:[\pi]:
+
+[latexmath]
 ++++
 \begin{equation}
 \begin{split}
@@ -65,6 +112,53 @@ Or when expressed in terms of latexmath:[\pi]:
 ++++
 
 The above cannot be understated. Now you don't need to compute a degree to radian measure.
+
+== Tricks using modular arithmetic
+
+
+=== Simplifying Angles greater than latexmath:[\tau] or latexmath:[360^{\circ}].
+
+==== Using Degrees
+
+In the following examples I believe the correct phrase is **co-terminal**, and is only equal when discarding excess turns.
+So consider the following equal signs as “functionally equal” (in the case of periodic functions).
+
+.Large Angles
+****
+Just use modular arithmetic to simplify angles greater than latexmath:[360^{\circ}].
+For example, to simplify latexmath:[990^{\circ}]:
+
+[latexmath]
+++++
+990 \mod 360 = 270
+++++
+****
+
+
+.Negative Angles
+****
+
+Just use modular arithmetic to simplify angles less than latexmath:[0].
+For example, to simplify latexmath:[-990^{\circ}]:
+
+[latexmath]
+++++
+-990 \mod 360 = 90
+++++
+
+so therefore:
+
+[latexmath]
+++++
+-990^{\circ} = 90^{\circ}
+++++
+
+Note that I haven't really used this all that much. Also it could be that this only applies to odd functions.
+****
+
+
+
+
 
 
 == Pythagorean Identities
@@ -93,7 +187,7 @@ The above cannot be understated. Now you don't need to compute a degree to radia
 
 === Likewise
 
-**From here the other two "Pythagorean Identities" can be easily derived.**
+**From here the other two "Pythagorean Identities" can be easily derived:**
 
 [latexmath]
 ++++

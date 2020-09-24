@@ -11,8 +11,19 @@ mkdir -p $OUT_DIR_WEB
 BUILD_PDF=false
 BUILD_HTML=true
 
+# OLD VERSION FOR COPYING STYLESHEET
+# if $BUILD_HTML; then
+# echo "builing html"
+# mkdir -p $OUT_DIR/config
+# rsync --checksum config/theme.css output/theme.css
+# bundle exec asciidoctor --base-dir=.  -a linkcss \
+#     -D $OUT_DIR \
+#     $SRC_DIR/*.adoc
+# fi
+
 if $BUILD_HTML; then
 echo "builing html"
+mkdir -p $OUT_DIR/config
 bundle exec asciidoctor \
     -D $OUT_DIR \
     $SRC_DIR/*.adoc
