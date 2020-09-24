@@ -442,7 +442,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
+<li><a href="#_functional_utilities">Functional Utilities</a></li>
 <li><a href="#_unit_conversion">Unit Conversion</a></li>
+<li><a href="#_tricks_using_modular_arithmetic">Tricks using modular arithmetic</a>
+<ul class="sectlevel2">
+<li><a href="#_simplifying_angles_greater_than_tau_or_360circ">Simplifying Angles greater than \(\tau\) or \(360^{\circ}\).</a></li>
+</ul>
+</li>
 <li><a href="#_pythagorean_identities">Pythagorean Identities</a>
 <ul class="sectlevel2">
 <li><a href="#_given">Given</a></li>
@@ -461,6 +467,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="sidebarblock">
 <div class="content">
+<div class="title">Locations</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -477,6 +484,41 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functional_utilities">Functional Utilities</h2>
+<div class="sectionbody">
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+f \triangleleft x &amp;= f(x) \\
+x \triangleright f &amp;= f(x)
+\end{split}
+\end{equation}\]
+</div>
+</div>
+<div class="paragraph">
+<p>Think of the arrows as denoting the order of evaluation
+E.g. pass this term to the function on the left, or pass this term to the function on the right of the arrow.
+Essentially, this is useful for reducing parentheses.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">For Example</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+\sin \triangleleft \frac{4}{12}\tau \;\displaystyle{\text{rad}} &amp;= -\frac{\sqrt{3}}{3} \\
+\sin \left(\frac{4}{12}\tau \;\displaystyle{\text{rad}} \right) &amp;= -\frac{\sqrt{3}}{3}
+\end{split}
+\end{equation}\]
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -520,6 +562,21 @@ x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
 <div class="paragraph">
 <p><strong>Take special note of the above.</strong> It essentially gives you a simple relation for conversion.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Or alternatively</div>
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
+\begin{split}
+x^{\circ} = x \cdot \frac{\tau}{360} \; {\displaystyle {\text{rad}}} \\
+x \; rad = x \cdot \frac{360^{\circ}}{\tau}
+\end{split}
+\end{equation}\]
+</div>
+</div>
+</div>
+</div>
 <div class="paragraph">
 <p>For example:</p>
 </div>
@@ -531,15 +588,73 @@ x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
 <div class="paragraph">
 <p>Or when expressed in terms of \(\pi\):</p>
 </div>
-\begin{equation}
+<div class="stemblock">
+<div class="content">
+\[\begin{equation}
 \begin{split}
-29^{\circ} &= \frac{29}{360} \tau \; {\displaystyle {\text{rad}}} \\
-    &= \frac{29}{360} (2\pi) \; {\displaystyle {\text{rad}}} \\
-    &= \frac{29}{180} \pi \; {\displaystyle {\text{rad}}}
+29^{\circ} &amp;= \frac{29}{360} \tau \; {\displaystyle {\text{rad}}} \\
+    &amp;= \frac{29}{360} (2\pi) \; {\displaystyle {\text{rad}}} \\
+    &amp;= \frac{29}{180} \pi \; {\displaystyle {\text{rad}}}
 \end{split}
-\end{equation}
+\end{equation}\]
+</div>
+</div>
 <div class="paragraph">
 <p>The above cannot be understated. Now you don&#8217;t need to compute a degree to radian measure.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tricks_using_modular_arithmetic">Tricks using modular arithmetic</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_simplifying_angles_greater_than_tau_or_360circ">Simplifying Angles greater than \(\tau\) or \(360^{\circ}\).</h3>
+<div class="sect3">
+<h4 id="_using_degrees">Using Degrees</h4>
+<div class="paragraph">
+<p>In the following examples I believe the correct phrase is <strong>co-terminal</strong>, and is only equal when discarding excess turns.
+So consider the following equal signs as “functionally equal” (in the case of periodic functions).</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Large Angles</div>
+<div class="paragraph">
+<p>Just use modular arithmetic to simplify angles greater than \(360^{\circ}\).
+For example, to simplify \(990^{\circ}\):</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[990 \mod 360 = 270\]
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Negative Angles</div>
+<div class="paragraph">
+<p>Just use modular arithmetic to simplify angles less than \(0\).
+For example, to simplify \(-990^{\circ}\):</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[-990 \mod 360 = 90\]
+</div>
+</div>
+<div class="paragraph">
+<p>so therefore:</p>
+</div>
+<div class="stemblock">
+<div class="content">
+\[-990^{\circ} = 90^{\circ}\]
+</div>
+</div>
+<div class="paragraph">
+<p>Note that I haven&#8217;t really used this all that much. Also it could be that this only applies to odd functions.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -575,7 +690,7 @@ x \; rad = \frac{x}{\tau} \cdot 360^{\circ}
 <div class="sect2">
 <h3 id="_likewise">Likewise</h3>
 <div class="paragraph">
-<p><strong>From here the other two "Pythagorean Identities" can be easily derived.</strong></p>
+<p><strong>From here the other two "Pythagorean Identities" can be easily derived:</strong></p>
 </div>
 <div class="stemblock">
 <div class="content">
@@ -952,7 +1067,7 @@ find other trig values given e.g. \(\sin \theta = \frac{3}{5}\), then e.g. find 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-09-22 17:17:11 -0600
+Last updated 2020-09-22 21:52:56 -0600
 </div>
 </div>
 <script type="text/x-mathjax-config">
