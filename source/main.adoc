@@ -159,9 +159,7 @@ Note that I haven't really used this all that much. Also it could be that this o
 
 
 
-
-
-== Pythagorean Identities
+== Pythagorean Identity Notes
 
 === Given
 [latexmath]
@@ -212,8 +210,12 @@ Note that I haven't really used this all that much. Also it could be that this o
 \end{equation}
 ++++
 
-=== Pythagorean Identities Reference
 
+== Trigonometric Identities Reference
+
+
+.Pythagorean Identities
+****
 [latexmath]
 ++++
 \begin{equation}
@@ -224,48 +226,78 @@ Note that I haven't really used this all that much. Also it could be that this o
 \end{split}
 \end{equation}
 ++++
+****
 
-
-== Sum and Difference Identities
-
+.Sum and Difference Identities
+****
 [latexmath]
 ++++
 include::latex/sum-diff-ident.tex[]
 ++++
+****
 
-=== Example
+
+.Cofunction Identities
+****
+[latexmath]
+++++
+include::latex/cofunction-ident.tex[]
+++++
+****
+
+
+.Double-Angle Identities
+****
+- **Remember for Exams.** The professor said this isn't given during the Exam, and that we need to know this, said this in the context of Double-Angle & Half-Angle Identities.
+- The **Double-Angle Identities** are easy to derive from the **Sum and Difference Identities**.
+[latexmath]
+++++
+include::latex/double-angle-ident.tex[]
+++++
+****
+
+.Power-Reducing Identities
+****
+[latexmath]
+++++
+include::latex/power-reducing-ident.tex[]
+++++
+****
+
+.Half-Angle Identities
+****
+**Remember for Exams.** The professor said this isn't given during the Exam, and that we need to know this, said this in the context of Double-Angle & Half-Angle Identities, she may have been talking about just the Double-Angle Identities.
+[latexmath]
+++++
+include::latex/half-angle-ident.tex[]
+++++
+**The choice of the plus or minus sign depends on the quadrant in which latexmath:[\frac{\alpha}{2}] lies.**
+****
+
+
+.Product-to-Sum Identities
+****
+++++
+include::latex/product-to-sum-ident.tex[]
+++++
+****
+
+.Sum-to-Product-Identities
+****
+++++
+include::latex/sum-to-product-ident.tex[]
+++++
+****
+
+
+== Using Trigonometric Identities
+
+=== Sum and Difference Identity Application
 
 [latexmath]
 ++++
 include::latex/sum-diff-ident-eg1.tex[]
 ++++
-
-
-== Cofunction Identities
-
-[latexmath]
-++++
-include::latex/cofunction-ident.tex[]
-++++
-
-
-== Double-Angle Identities
-- **Remember for Exams.** The professor said this isn't given during the Exam, and that we need to know this.
-- The **Double-Angle Identities** are easy to derive from the **Sum and Difference Identities**.
-
-[latexmath]
-++++
-include::latex/double-angle-ident.tex[]
-++++
-
-== Power-Reducing Identities
-
-[latexmath]
-++++
-include::latex/power-reducing-ident.tex[]
-++++
-
-
 
 
 == Properties of Trigonometric Functions
