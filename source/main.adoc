@@ -226,6 +226,46 @@ Note that I haven't really used this all that much. Also it could be that this o
 ++++
 
 
+== Sum and Difference Identities
+
+[latexmath]
+++++
+include::latex/sum-diff-ident.tex[]
+++++
+
+=== Example
+
+[latexmath]
+++++
+include::latex/sum-diff-ident-eg1.tex[]
+++++
+
+
+== Cofunction Identities
+
+[latexmath]
+++++
+include::latex/cofunction-ident.tex[]
+++++
+
+
+== Double-Angle Identities
+- **Remember for Exams.** The professor said this isn't given during the Exam, and that we need to know this.
+- The **Double-Angle Identities** are easy to derive from the **Sum and Difference Identities**.
+
+[latexmath]
+++++
+include::latex/double-angle-ident.tex[]
+++++
+
+== Power-Reducing Identities
+
+[latexmath]
+++++
+include::latex/power-reducing-ident.tex[]
+++++
+
+
 
 
 == Properties of Trigonometric Functions
