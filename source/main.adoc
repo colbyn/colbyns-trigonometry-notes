@@ -332,6 +332,8 @@ include::latex/sum-diff-ident-eg1.tex[]
 
 ## Concepts
 
+### Section 2
+
 * 2.1:
 ** **Complement and Supplement**
 ** **Co-Terminal with given angle**
