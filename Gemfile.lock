@@ -6,6 +6,8 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     afm (0.2.2)
     asciidoctor (2.0.10)
+    asciidoctor-diagram (2.0.4)
+      asciidoctor (>= 1.5.7, < 3.x)
     asciidoctor-mathematical (0.3.4)
       asciidoctor (~> 2.0, >= 2.0.0)
       asciimath (~> 2.0.0, >= 2.0.0)
@@ -68,6 +70,7 @@ PLATFORMS
 
 DEPENDENCIES
   asciidoctor
+  asciidoctor-diagram
   asciidoctor-mathematical
   asciidoctor-pdf
 

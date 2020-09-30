@@ -292,11 +292,19 @@ include::latex/sum-to-product-ident.tex[]
 
 == Using Trigonometric Identities
 
-=== Sum and Difference Identity Application
+=== Sum and Difference Identity Application | E.g. 1
 
 [latexmath]
 ++++
 include::latex/sum-diff-ident-eg1.tex[]
+++++
+
+
+=== Sum and Difference Identity Application | E.g. 2
+
+[latexmath]
+++++
+include::latex/sum-diff-ident-eg2.tex[]
 ++++
 
 
@@ -329,10 +337,22 @@ include::latex/sum-diff-ident-eg1.tex[]
 |latexmath:[\tan]|latexmath:[\frac{1}{2}\tau]|latexmath:[\cot]|latexmath:[\frac{1}{2}\tau]
 |===
 
+== Graphing Trigonometric Functions
 
-## Concepts
+.Graphing Mistake
+****
+Made a graphing mistake on an Exam. By default, the period of the tangent function is stem:[\pi], and it's easiest to graph a single period within the asymptotes, such as from stem:[-\frac{1}{2}\pi] to stem:[\frac{1}{2}\pi], which is what I did, but didn't update the labels with the halved period.
+****
 
-### Section 2
+
+[tikz,"image1",svg]
+----
+include::latex/tan-graph.tex[]
+----
+
+== Concepts
+
+=== Section Two
 
 * 2.1:
 ** **Complement and Supplement**

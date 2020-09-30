@@ -25,6 +25,7 @@ if $BUILD_HTML; then
 echo "builing html"
 mkdir -p $OUT_DIR/config
 bundle exec asciidoctor \
+    -r asciidoctor-diagram \
     -D $OUT_DIR \
     $SRC_DIR/*.adoc
 fi
