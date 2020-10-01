@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+    \coordinate [label=left:$C$] (A) at (0,0);
+    \coordinate [label=right:$A$] (B) at (2,0);
+    \coordinate [label=above:$B$] (C) at (2,2);
+    \draw (A) -- (B) -- (C) -- (A);
+    \draw (A) -- (0,2) -- (C);
+    % \filldraw[color=red!60, fill=red!5, very thick] (A) -- (1,0) arc (0:45:1cm) -- cycle;
+    \tkzMarkAngle[size=1cm,color=cyan,mark=|](A,C,B)
+\end{tikzpicture}

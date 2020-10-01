@@ -12,6 +12,11 @@
 |===
 ****
 
+[tikz,"image2",svg]
+----
+include::tikz/cofunctions.tex[]
+----
+
 == Functional Utilities
 
 [latexmath]
