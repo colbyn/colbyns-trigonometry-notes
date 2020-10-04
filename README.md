@@ -1,5 +1,7 @@
 # Colbyn's Trigonometry Notes
 
+Moved to: https://github.com/colbyn/colbyns-math-notes
+
 ## Compiling the PDF
 
 ```shell
