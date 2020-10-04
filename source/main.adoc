@@ -12,6 +12,8 @@
 |===
 ****
 
+New home: https://github.com/colbyn/colbyns-math-notes
+
 
 == Functional Utilities
 
@@ -257,14 +259,6 @@ include::latex/double-angle-ident.tex[]
 ++++
 ****
 
-.Power-Reducing Identities
-****
-[latexmath]
-++++
-include::latex/power-reducing-ident.tex[]
-++++
-****
-
 .Half-Angle Identities
 ****
 **Remember for Exams.** The professor said this isn't given during the Exam, and that we need to know this, said this in the context of Double-Angle & Half-Angle Identities, she may have been talking about just the Double-Angle Identities.
@@ -275,6 +269,13 @@ include::latex/half-angle-ident.tex[]
 **The choice of the plus or minus sign depends on the quadrant in which latexmath:[\frac{\alpha}{2}] lies.**
 ****
 
+.Power-Reducing Identities
+****
+[latexmath]
+++++
+include::latex/power-reducing-ident.tex[]
+++++
+****
 
 .Product-to-Sum Identities
 ****
@@ -417,6 +418,14 @@ include::latex/tan-graph.tex[]
 ** Graph each function by using translations.
 ** Graph the given function by using the addition-of-ordinates method.
 ** Find an equation for each blue graph.
+
+
+=== Section Three
+
+==== Exam Hints
+
+* HW 3.2 #40
+
 
 
 // When is latexmath:[\frac{1}{\cos \x} = 0]?
